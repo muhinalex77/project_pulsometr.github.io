@@ -15,7 +15,8 @@
 		url('../fonts/museosanscyrl-500.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
 		url('../fonts/museosanscyrl-500.ttf') format('truetype'), /* Safari, Android, iOS */
 		url('../fonts/museosanscyrl-500.svg#museosanscyrl-500') format('svg'); /* Chrome < 4, Legacy iOS */
-}@font-face {
+}
+@font-face {
 	font-family: 'MuseoSansCyrl-700';
 	src: url('../fonts/museosanscyrl-700.eot'); /* IE 9 Compatibility Mode */
 	src: url('../fonts/museosanscyrl-700.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
