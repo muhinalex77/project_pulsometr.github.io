@@ -4,11 +4,7 @@
     "sources": [
         "../sass/style.scss",
         "../sass/base/_variables.scss",
-        "../sass/blocks/_promo.scss",
-        "../sass/blocks/_header.scss",
-        "../sass/blocks/_buttons.scss",
-        "../sass/blocks/_advantages.scss",
-        "../sass/blocks/_titles.scss"
+        "../sass/blocks/_header.scss"
     ],
     "names": [],
     "file": "style.min.css"
