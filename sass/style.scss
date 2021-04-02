@@ -1,6 +1,14 @@
 @import 'base/variables';
 * {
     font-family: 'MuseoSansCyrl', sans-serif;
+    color: #ffffff;
+}
+
+a {
+    color: #ffffff;
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 .container {
@@ -8,4 +16,6 @@
     margin: 0 auto;
 }
 
+@import 'blocks/promo';
 @import 'blocks/header';
+@import 'blocks/buttons';

@@ -13,7 +13,7 @@
  }
  
  @font-face {
-     font-family: 'MuseoSansCyrl-500';
+     font-family: 'MuseoSansCyrl';
      src: local('fonts/museosanscyrl-500.eot');
      /* IE 9 Compatibility Mode */
      src: url('../fonts/museosanscyrl-500.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
@@ -27,7 +27,7 @@
  }
  
  @font-face {
-     font-family: 'MuseoSansCyrl-700';
+     font-family: 'MuseoSansCyrl';
      src: local('fonts/museosanscyrl-700.eot');
      /* IE 9 Compatibility Mode */
      src: url('../fonts/museosanscyrl-700.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
