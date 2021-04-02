@@ -1,0 +1,62 @@
+@media (max-width: 1200px) {}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {
+    .header {
+        padding-left: 10px;
+        padding-right: 10px;
+        flex-wrap: wrap;
+        &__logo {
+            width: 50%;
+            img {
+                width: 80%;
+            }
+        }
+        &__official {
+            width: 50%;
+            text-align: right;
+        }
+        &__contacts {
+            margin-top: 15px;
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+            border-bottom: 1px solid #ffffff;
+            padding-bottom: 5px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .header {
+        &__logo {
+            order: 2;
+            width: 50%;
+            img {
+                width: 100%;
+            }
+        }
+        &__official {
+            order: 3;
+            &_first {
+                font-size: 10px;
+            }
+            &_second {
+                font-size: 10px;
+            }
+        }
+        &__contacts {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        &__phone {
+            font-size: 16px;
+        }
+        .button {
+            width: 105px;
+            font-size: 10px;
+        }
+    }
+}
