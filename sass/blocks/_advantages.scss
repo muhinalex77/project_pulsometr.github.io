@@ -34,6 +34,12 @@
             margin-top: 28px;
             font-size: 14px;
             font-weight: 300;
+            span {
+                a {
+                    color: $main-color;
+                    text-decoration: underline;
+                }
+            }
         }
     }
 }
