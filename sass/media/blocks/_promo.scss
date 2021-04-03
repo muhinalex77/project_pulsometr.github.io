@@ -1,6 +1,10 @@
     @media (max-width: 1200px) {}
     
-    @media (max-width: 991px) {}
+    @media (max-width: 991px) {
+        .promo {
+            padding: 21px 10px 93px 10px;
+        }
+    }
     
     @media (max-width: 767px) {
         .promo {
