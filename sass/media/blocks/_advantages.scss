@@ -1,0 +1,19 @@
+@media (max-width: 1200px) {}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {
+    .advantages {
+        &__items {
+            justify-content: space-around;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .advantages {
+        &__items {
+            justify-content: space-around;
+        }
+    }
+}
