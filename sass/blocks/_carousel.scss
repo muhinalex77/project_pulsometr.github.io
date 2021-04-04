@@ -33,6 +33,7 @@
             display: flex;
             width: 200px;
             margin: 0 auto;
+            margin-top: 10px;
             justify-content: space-around;
             padding: 0;
             .slick-active {
@@ -42,8 +43,8 @@
             }
             button {
                 outline: none;
-                width: 25px;
-                height: 25px;
+                width: 35px;
+                height: 35px;
                 background: $main-color;
                 border-radius: 100%;
                 border: none;
