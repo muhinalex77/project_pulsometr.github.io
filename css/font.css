@@ -1,6 +1,6 @@
  @font-face {
      font-family: 'MuseoSansCyrl';
-     src: local('fonts/museosanscyrl-300.eot');
+     src: local('../fonts/museosanscyrl-300.eot');
      /* IE 9 Compatibility Mode */
      src: url('../fonts/museosanscyrl-300.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
      url('../fonts/museosanscyrl-300.woff2') format('woff2'), /* Super Modern Browsers */
@@ -14,7 +14,7 @@
  
  @font-face {
      font-family: 'MuseoSansCyrl';
-     src: local('fonts/museosanscyrl-500.eot');
+     src: local('../fonts/museosanscyrl-500.eot');
      /* IE 9 Compatibility Mode */
      src: url('../fonts/museosanscyrl-500.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
      url('fonts/museosanscyrl-500.woff2') format('woff2'), /* Super Modern Browsers */
@@ -28,7 +28,7 @@
  
  @font-face {
      font-family: 'MuseoSansCyrl';
-     src: local('fonts/museosanscyrl-700.eot');
+     src: local('../fonts/museosanscyrl-700.eot');
      /* IE 9 Compatibility Mode */
      src: url('../fonts/museosanscyrl-700.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
      url('fonts/museosanscyrl-700.woff2') format('woff2'), /* Super Modern Browsers */

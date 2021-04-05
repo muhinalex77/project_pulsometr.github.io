@@ -1,55 +1,32 @@
-.carousel {
-    padding: 81px 0;
-    &__inner {
-        width: 750px;
-        position: relative;
-        margin: 0 auto;
-        border: none;
-        .slick-list {
-            width: 100%;
-            img {
-                width: 100%;
-            }
-        }
-        .slick-prev,
-        .slick-next {
-            position: absolute;
-            border: none;
-            background: #fff;
-            top: 50%;
-            border: none;
-            transform: translateY(-50%);
-            left: -66px;
-            img {
-                width: 31px;
-                height: 50px;
-            }
-        }
-        .slick-next {
-            right: -66px;
-            left: auto;
-        }
-        .slick-dots {
-            display: flex;
-            width: 200px;
-            margin: 0 auto;
-            margin-top: 10px;
-            justify-content: space-around;
-            padding: 0;
-            .slick-active {
-                button {
-                    background: #561416;
+        .carousel {
+            padding: 81px 0;
+            .container {
+                .prev,
+                .next {
+                    position: absolute;
+                    border: none;
+                    background: #fff;
+                    top: 50%;
+                    border: none;
+                    transform: translateY(-50%);
+                    left: -66px;
+                    img {
+                        width: 31px;
+                        height: 50px;
+                    }
+                }
+                .next {
+                    right: -66px;
+                    left: auto;
                 }
             }
-            button {
-                outline: none;
-                width: 35px;
-                height: 35px;
-                background: $main-color;
-                border-radius: 100%;
-                border: none;
-                color: #fff;
+            &__inner {
+                .tns-item {
+                    img {
+                        width: 100%;
+                        display: block;
+                        margin: 0 auto;
+                    }
+                }
             }
         }
-    }
-}

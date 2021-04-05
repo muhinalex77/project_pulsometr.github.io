@@ -1,0 +1,23 @@
+@media (max-width: 1200px) {}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 575px) {
+    .catalog {
+        padding-bottom: 100px;
+        .title {
+            font-size: 30px;
+        }
+        &__tabs {
+            margin-top: 30px;
+        }
+        &__tab {
+            width: 25%;
+            div {
+                font-size: 9px;
+            }
+        }
+    }
+}
