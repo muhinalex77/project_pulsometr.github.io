@@ -1,0 +1,18 @@
+@media (max-width: 1200px) {}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 575px) {
+    .footer {
+        &__info {
+            width: 100%;
+            left: 100%;
+            transform: translateX(-100%);
+        }
+        &__adress {
+            margin-top: 25px;
+        }
+    }
+}
