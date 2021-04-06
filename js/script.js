@@ -116,4 +116,32 @@ $(document).ready(function() {
             $('.overlay, #order').fadeIn('slow');
         })
     });
+
+
+
+    function validateForm(form) {
+        $(form).validate({
+            rules: {
+                name: "required",
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: "Пожалуйста ввидите ваше имя",
+                phone: "Пожалуйста ввидите номер телефона",
+                email: {
+                    required: "Пожалуйста, ввидите свою почту",
+                    email: "Неправильно введен адресс почты, пример: name@domain.com"
+                }
+            }
+        });
+    }
+
+    validateForm('#consultation-form');
+    validateForm('#consultation form');
+    validateForm('#order form');
+
 });

@@ -98,7 +98,7 @@
             <div class="consultation__descr">
                 Просто заполните форму зявки <br> и мы перезвоним вам в течении 10 минут
             </div>
-            <form class="feed-form" action="#">
+            <form id="consultation-form" class="feed-form" action="#">
                 <input required name="name" type="text" placeholder="Ваше имя">
                 <input required name="phone" type="tel" placeholder="Ваше телефон">
                 <input required name="email" type="email " placeholder="Ваше E-mail">
@@ -592,9 +592,9 @@
             <div class="modal__subtitle">Просто заполните форму заявки</div>
             <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
             <form class="feed-form feed-form_ " action="#">
-                <input required name="name" type="text" placeholder="Ваше имя">
-                <input required name="phone" type="tel" placeholder="Ваше телефон">
-                <input required name="email" type="email " placeholder="Ваше E-mail">
+                <input name="name" type="text" placeholder="Ваше имя">
+                <input name="phone" type="tel" placeholder="Ваше телефон">
+                <input name="email" type="email " placeholder="Ваше E-mail">
                 <button class="button button_submit">Заказать консультацию</button>
 
             </form>
@@ -623,6 +623,8 @@
     <!-- <script type="text/javascript" src="js/slick.min.js"></script>  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+
     <script src="js/script.js"></script>
 </body>
 
