@@ -104,32 +104,32 @@ $(document).ready(function() {
     });
 
 
-    // function validateForms(form) {
-    //     $(form).validate({
-    //         rules: {
-    //             name: {
-    //                 required: true,
-    //                 minlength: 2
-    //             },
-    //             phone: "required",
-    //             email: {
-    //                 required: true,
-    //                 email: true
-    //             }
-    //         },
-    //         messages: {
-    //             name: {
-    //                 required: "Пожалуйста, введите свое имя",
-    //                 minlength: jQuery.validator.format("Введите {0} символа!")
-    //             },
-    //             phone: "Пожалуйста, введите свой номер телефона",
-    //             email: {
-    //                 required: "Пожалуйста, введите свою почту",
-    //                 email: "Неправильно введен адрес почты"
-    //             }
-    //         }
-    //     });
-    // };
+    function validateForms(form) {
+        $(form).validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: {
+                    required: "Пожалуйста, введите свое имя",
+                    minlength: jQuery.validator.format("Введите {0} символа!")
+                },
+                phone: "Пожалуйста, введите свой номер телефона",
+                email: {
+                    required: "Пожалуйста, введите свою почту",
+                    email: "Неправильно введен адрес почты"
+                }
+            }
+        });
+    };
 
     validateForms('#consultation-form');
     validateForms('#consultation form');
@@ -154,12 +154,11 @@ $(document).ready(function() {
     });
     // smooth scroll and page up
 
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 1600) {
-            $('.pageup').fadeIn();
-        } else {
-            $('.pageup').fadeOut();
-        }
+    $("a[href^='#']").click(function() {
+        var _href = $(this).attr("href");
+        $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
+        return false;
     });
+
 
 });
