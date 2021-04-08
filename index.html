@@ -21,7 +21,7 @@
 
 <body>
 
-    <section class="promo">
+    <section class="promo" id="top">
         <div class="container">
             <header class="header">
                 <div class="header__logo">
@@ -99,9 +99,9 @@
                 Просто заполните форму зявки <br> и мы перезвоним вам в течении 10 минут
             </div>
             <form id="consultation-form" class="feed-form" action="#">
-                <input name="name" type="text" placeholder="Ваше имя">
-                <input name="phone" placeholder="Ваше телефон">
-                <input name="email" type="email " placeholder="Ваше E-mail">
+                <input name="name" required type="text" placeholder="Ваше имя">
+                <input name="phone" required placeholder="Ваше телефон">
+                <input name="email" required type="email " placeholder="Ваше E-mail">
 
                 <button class="button button_submit">Заказать консультацию</button>
             </form>
@@ -603,10 +603,10 @@
             <div class="modal__close">&times;</div>
             <div class="modal__subtitle">Ваш заказ:</div>
             <div class="modal__descr">Пульсометр Polar FT1</div>
-            <form class="feed-form feed-form_ " action="#">
-                <input name="name" type="text" placeholder="Ваше имя">
-                <input name="phone" placeholder="Ваше телефон">
-                <input name="email" type="email " placeholder="Ваше E-mail">
+            <form class="feed-form feed-form_mt25 " action="#">
+                <input name="name" required type="text" placeholder="Ваше имя">
+                <input name="phone" required placeholder="Ваше телефон">
+                <input name="email" required type="email " placeholder="Ваше E-mail">
                 <button class="button button_submit">Заказать консультацию</button>
 
             </form>
@@ -617,6 +617,12 @@
             <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
         </div>
     </div>
+    <div class="pageup">
+        <a href="#top">
+            <img src="img/icons/chevron.svg" alt="up1">
+        </a>
+    </div>
+
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

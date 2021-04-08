@@ -55,11 +55,6 @@ const slider = tns({
     responsive: {
         1100: {
             autoWidth: true,
-
-        },
-        700: {},
-        900: {
-
         }
     }
 
@@ -70,14 +65,6 @@ document.querySelector('.prev').addEventListener('click', function() {
 document.querySelector('.next').addEventListener('click', function() {
     slider.goTo('next');
 });
-
-
-
-
-
-
-
-
 
 $(document).ready(function() {
 
@@ -100,10 +87,9 @@ $(document).ready(function() {
     toggleSlide('.catalog-item__back');
 
     // Modal
-    $('[data-modal=consultation]').on('click',
-        function() {
-            $('.overlay, #consultation').fadeIn('slow');
-        });
+    $('[data-modal=consultation]').on('click', function() {
+        $('.overlay, #consultation').fadeIn('slow');
+    });
     $('.modal__close').on('click', function() {
         $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
     });
@@ -118,31 +104,36 @@ $(document).ready(function() {
     });
 
 
+    // function validateForms(form) {
+    //     $(form).validate({
+    //         rules: {
+    //             name: {
+    //                 required: true,
+    //                 minlength: 2
+    //             },
+    //             phone: "required",
+    //             email: {
+    //                 required: true,
+    //                 email: true
+    //             }
+    //         },
+    //         messages: {
+    //             name: {
+    //                 required: "Пожалуйста, введите свое имя",
+    //                 minlength: jQuery.validator.format("Введите {0} символа!")
+    //             },
+    //             phone: "Пожалуйста, введите свой номер телефона",
+    //             email: {
+    //                 required: "Пожалуйста, введите свою почту",
+    //                 email: "Неправильно введен адрес почты"
+    //             }
+    //         }
+    //     });
+    // };
 
-    function validateForm(form) {
-        $(form).validate({
-            rules: {
-                name: "required",
-                phone: "required",
-                email: {
-                    required: true,
-                    email: true
-                }
-            },
-            messages: {
-                name: "Пожалуйста ввидите ваше имя",
-                phone: "Пожалуйста ввидите номер телефона",
-                email: {
-                    required: "Пожалуйста, ввидите свою почту",
-                    email: "Неправильно введен адресс почты, пример: name@domain.com"
-                }
-            }
-        });
-    }
-
-    validateForm('#consultation-form');
-    validateForm('#consultation form');
-    validateForm('#order form');
+    validateForms('#consultation-form');
+    validateForms('#consultation form');
+    validateForms('#order form');
 
     $('input[name=phone]').mask("+7 (999) 999-99-99");
 
@@ -155,10 +146,9 @@ $(document).ready(function() {
         }).done(function() {
             $(this).find("input").val("");
             $('#consultation, #order').fadeOut();
-
             $('.overlay, #thanks').fadeIn('slow');
 
-            $('form').triger('reset');
+            $('form').trigger('reset');
         });
         return false;
     });
