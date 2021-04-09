@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <!--   meta tags -->
@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
     <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/min/tiny-slider.helper.ie8.js"></script><![endif]-->
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- <link rel="stylesheet" href="css/animate.css"> -->
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -65,7 +67,9 @@
 
     <section class="advantages">
         <div class="container">
-            <div class="advantages__header">Наши преимущества</div>
+            <div class="advantages__header">
+                <h2>Наши преимущества</h2>
+            </div>
             <div class="advantages__items">
                 <div class="advantages__item">
                     <div class="item__icon">
@@ -76,7 +80,7 @@
                 </div>
                 <div class="advantages__item">
                     <div class="item__icon">
-                        <img src="img/icons/heart.png" alt="heart">
+                        <img src="img/icons/heart.png" alt="heart" class="advantages__icon_animated">
                         <div class="item__header">Заботимся о здоровье</div>
                         <div class="item__text">Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!</div>
                     </div>
@@ -101,13 +105,13 @@
             <form id="consultation-form" class="feed-form" action="#">
                 <input name="name" required type="text" placeholder="Ваше имя">
                 <input name="phone" required placeholder="Ваше телефон">
-                <input name="email" required type="email " placeholder="Ваше E-mail">
+                <input name="email" required type="email" placeholder="Ваше E-mail">
 
                 <button class="button button_submit">Заказать консультацию</button>
             </form>
         </div>
     </section>
-    <section class="carousel">
+    <div class="carousel">
         <div class="container">
             <div class="carousel__inner">
                 <div><img src="img/products/slide_1.jpg" alt=""></div>
@@ -115,13 +119,15 @@
                 <div><img src="img/products/slide_3.jpg" alt=""></div>
 
             </div>
-            <button type="button" class="prev"><img src="img/icons/left.png"></button>
-            <button type="button" class="next"><img src="img/icons/right.png"></button>
+            <button type="button" class="prev"><img src="img/icons/left.png" alt="left"></button>
+            <button type="button" class="next"><img src="img/icons/right.png" alt="right"></button>
         </div>
-    </section>
+    </div>
     <section class="catalog">
         <div class="container">
-            <div class="title">Каталог пульсометров</div>
+            <div class="title">
+                <h2>Каталог пульсометров</h2>
+            </div>
             <ul class="catalog__tabs">
                 <li class="catalog__tab catalog__tab_active">
                     <div> для фитнеса</div>
@@ -524,7 +530,7 @@
         <div class="container">
             <h2 class="title">отзывы клиентов</h2>
             <div class="reviews__items">
-                <div class="reviews__item">
+                <div data-wow-delay="0.5s" class="reviews__item wow animate__animated animate__fadeInUp">
                     <div class="reviews__img"><img src="img/reviews/feed_1.png" alt="1"></div>
                     <div class="reviews__content">
                         <div class="reviews__name">Ирина Иванченко</div>
@@ -535,7 +541,7 @@
                     </div>
 
                 </div>
-                <div class="reviews__item">
+                <div data-wow-delay="1s" class="reviews__item wow animate__animated animate__fadeInUp">
                     <div class="reviews__img"><img src="img/reviews/feed_2.png" alt="2"></div>
                     <div class="reviews__content">
                         <div class="reviews__name">Иван Сёмочкин</div>
@@ -546,7 +552,7 @@
                     </div>
 
                 </div>
-                <div class="reviews__item">
+                <div data-wow-delay="1.5s" class="reviews__item wow animate__animated animate__fadeInUp">
                     <div class="reviews__img"><img src="img/reviews/feed_3.png" alt="3"></div>
                     <div class="reviews__content">
                         <div class="reviews__name">Юлия Дашкина</div>
@@ -568,12 +574,12 @@
     <footer class="footer">
         <div class="footer__map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3174.117229384382!2d37.64373852685401!3d55.76823282006544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEwNzA3OA!5e0!3m2!1sru!2sua!4v1617660872378!5m2!1sru!2sua"
-                width="100%" height="630" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                allowfullscreen="" loading="lazy"></iframe>
         </div>
         <div class="footer__info">
-            <adress class="footer__adress">
+            <div class="footer__adress">
                 Москва, Мясницкий проезд, д.3с1
-            </adress>
+            </div>
             <div class="footer__tel">
                 <a href="tel:+84999228974">8 (499) 922-89-74</a>
             </div>
@@ -594,7 +600,7 @@
             <form class="feed-form feed-form_ " action="#">
                 <input name="name" type="text" placeholder="Ваше имя">
                 <input name="phone" placeholder="Ваше телефон">
-                <input name="email" type="email " placeholder="Ваше E-mail">
+                <input name="email" type="email" placeholder="Ваше E-mail">
                 <button class="button button_submit">Заказать консультацию</button>
 
             </form>
@@ -604,9 +610,9 @@
             <div class="modal__subtitle">Ваш заказ:</div>
             <div class="modal__descr">Пульсометр Polar FT1</div>
             <form class="feed-form feed-form_mt25 " action="#">
-                <input name="name" required type="text" placeholder="Ваше имя">
+                <input name="name" type="text" required placeholder="Ваше имя">
                 <input name="phone" required placeholder="Ваше телефон">
-                <input name="email" required type="email " placeholder="Ваше E-mail">
+                <input name="email" type="email" required placeholder="Ваше E-mail">
                 <button class="button button_submit">Заказать консультацию</button>
 
             </form>
@@ -623,13 +629,14 @@
     </a>
 
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <!-- <script type="text/javascript" src="js/slick.min.js"></script>  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 

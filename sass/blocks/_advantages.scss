@@ -4,12 +4,14 @@
     padding-top: 70px;
     padding-bottom: 78px;
     &__header {
-        text-align: center;
-        font-size: 30px;
-        line-height: 1.2;
-        font-weight: 700;
-        color: #0d0d0d;
-        text-transform: uppercase;
+        h2 {
+            text-align: center;
+            font-size: 30px;
+            line-height: 1.2;
+            font-weight: 700;
+            color: #0d0d0d;
+            text-transform: uppercase;
+        }
     }
     &__items {
         margin-top: 45px;
@@ -40,6 +42,12 @@
                     text-decoration: underline;
                 }
             }
+        }
+    }
+    &__icon_animated {
+        animation: heartbeat 1s ease infinite;
+        &:hover {
+            animation-play-state: paused;
         }
     }
 }

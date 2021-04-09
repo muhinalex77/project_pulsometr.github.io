@@ -1,11 +1,13 @@
 .title {
-    font-size: 36px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #000;
-    text-align: center;
-    &_left {
-        text-align: left;
-        color: #fff;
+    h2 {
+        font-size: 36px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #000;
+        text-align: center;
+        &_left {
+            text-align: left;
+            color: #fff;
+        }
     }
 }

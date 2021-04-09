@@ -66,6 +66,9 @@ document.querySelector('.next').addEventListener('click', function() {
     slider.goTo('next');
 });
 
+new WOW().init();
+
+
 $(document).ready(function() {
 
     $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
@@ -154,11 +157,10 @@ $(document).ready(function() {
     });
     // smooth scroll and page up
 
-    $("a[href^='#']").click(function() {
+    $("a[href=#top]").click(function() {
         var _href = $(this).attr("href");
         $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
         return false;
     });
-
 
 });
